@@ -1,0 +1,86 @@
+@import "../Helper/Variables.scss";
+
+div.mainDetailsLogIn {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: $div-border-radius;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    text-align: center;
+
+    h2.titleForm {
+      font-size: $header-font-size;
+      font-family: $header-font-family ;
+      color: #1ca1f5;
+    text-shadow: 0 0 10px #008c8c, 0 0 20px #ffffff, 0 0 30px #18d8ea;
+    margin-bottom: 20px;
+    
+    &::after {
+        content: '✨⚽✨';
+        font-size: 1.5vw;
+        margin-left: 10px;
+    }
+    
+    }
+  
+    form.logInForm {
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: $subTitle-font-size;
+        }
+
+      label.form-label {
+        font-size: $title-font-size;
+        font-family: $title-font-family ;
+      }
+      div.errorAlertCustom {
+        margin-top: 0.2vw;
+        animation: shake 0.5s ease-in-out;
+        animation-iteration-count: 1;
+        font-size:$subTitle-font-size;
+        font-family:$subTitle-font-family;
+        color: red;
+        cursor: $cursor-Error;
+      }
+
+      button {
+        background-color: #df23f7;
+        border: none;
+        color: white;
+        font-size: $topTitle-font-size;
+        font-family: $topTitle-font-family ;
+        padding: 12px 20px;
+        border-radius: $small-border-radius ;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+  
+        &:hover {
+          background-color: #ab0be0;
+          transform: scale(1.05);
+          cursor: $cursor-Correct;
+        }
+  
+        &:active {
+          background-color: #6d0d76;
+          transform: scale(0.95);
+        }
+        
+        &.btnGoogle {
+          display: block;
+          width: 100%;
+          padding: 15px;
+          background-color: #130fe1;
+          border: none;
+          color: white;
+          margin-top: 10px;
+  
+          &:hover {
+              background-color: #0c0897;
+          }
+      }
+      }
+    }
+  }

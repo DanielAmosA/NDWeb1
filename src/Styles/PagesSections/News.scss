@@ -1,0 +1,72 @@
+@import '../Helper/Animations.scss';
+@import '../Helper/Medias.scss';
+@import '../Helper/Variables.scss';
+
+div.carouselCustom {
+    padding: 2vw;;
+    background-color: #0a1a2b; /* כחול כהה, רקע נקי */
+    border-radius: $div-border-radius;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+ 
+ 
+    div.articleCol {
+        padding: 0 0.8vw;
+        div.articleSlide {
+            animation: fadeIn 0.5s ease-in-out;
+            background: linear-gradient(135deg, #1c3d5a, #2a5791); /* גווני כחול כהה */
+            border-radius:  0.2vw;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 0.6s ease-in-out;
+        
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+              }
+        
+              img.articleImage {
+                height: 10vw;
+                object-fit: fill;
+                object-position: center;
+                border-bottom: 5px solid #ff4500; 
+              }
+        
+              div.articleContent {
+                padding: 0.6vw;
+                text-align: center;
+                color: white;
+        
+                h2.articleTitle {
+                    font-size: $topTitle-font-size;
+                    font-family: $topTitle-font-family;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    color: #ffcc00; /* צהוב לכותרת */
+                  }
+                  h4.articleSubTitle {
+                    color: #e0e0e0;
+                    font-size: $title-font-size;
+                    font-family: $title-font-family;
+                  }
+                  h6.articlePublish{
+                    font-size: $subTitle-font-size;
+                    font-family: $subTitle-font-family;
+                  }
+        
+                  div.articleIcons {
+                    margin-top: 2vh;
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+        
+                    img.articleIconImg{
+                        height: 4vh;
+                        width: fit-content;
+                      }
+                  }
+              }
+          }
+      }
+
+}

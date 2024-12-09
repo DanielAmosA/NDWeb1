@@ -1,0 +1,186 @@
+@charset "UTF-8";
+.lal {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+div.countryAndLeagueSelect {
+  background: linear-gradient(135deg, #f0f4f8, #e0e7ff); /* רקע בהיר עם מעבר צבע עדין */
+  padding-top: 2vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1vw;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+div.mainDetailsSignUp {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1vw;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+div.mainDetailsSignUp h2.titleForm {
+  font-size: 1.2vw;
+  font-family: "Playfair Display", serif;
+  color: #ffdb58;
+  text-shadow: 0 0 10px #ffdb58, 0 0 20px #ffffff, 0 0 30px #ffdb58;
+  margin-bottom: 20px;
+}
+div.mainDetailsSignUp h2.titleForm::after {
+  content: "⚽";
+  font-size: 1.5vw;
+  margin-left: 10px;
+}
+div.mainDetailsSignUp form.signUpForm input[type=text], div.mainDetailsSignUp form.signUpForm input[type=email], div.mainDetailsSignUp form.signUpForm input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.6vw;
+}
+div.mainDetailsSignUp form.signUpForm label.form-label {
+  font-size: 0.8vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+div.mainDetailsSignUp form.signUpForm div.errorAlertCustom {
+  margin-top: 0.2vw;
+  animation: shake 0.5s ease-in-out;
+  animation-iteration-count: 1;
+  font-size: 0.6vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: red;
+  cursor: url("../../Assets/Pic/Cursor/Error.png"), auto;
+}
+div.mainDetailsSignUp form.signUpForm button[type=submit] {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 12px 20px;
+  border-radius: 8vw;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+div.mainDetailsSignUp form.signUpForm button[type=submit]:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  cursor: url("../../Assets/Pic/Cursor/Correct.png"), auto;
+}
+div.mainDetailsSignUp form.signUpForm button[type=submit]:active {
+  background-color: #004085;
+  transform: scale(0.95);
+}
+div.mainDetailsSignUp form.signUpForm button[type=submit].btnGoogle {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+div.mainDetailsSignUp form.signUpForm button[type=submit].btnGoogle:hover {
+  background-color: #e64a19;
+}
+
+div.mainLeagueSeasons {
+  background-color: #6a1b9a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  max-width: 300px;
+  color: white;
+  transition: transform 0.3s ease;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+div.mainLeagueSeasons:hover {
+  transform: scale(1.05);
+}
+div.mainLeagueSeasons h2.leagueName {
+  background-color: #d32f2f;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8vw;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+div.mainLeagueSeasons div.mainSeason {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div.mainLeagueSeasons div.mainSeason label.seasonDetails {
+  display: flex;
+  align-items: center;
+  background-color: #3fe659;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.6vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0.3vh;
+}
+div.mainLeagueSeasons div.mainSeason label.seasonDetails:hover {
+  background-color: #ffeb3b;
+}
+div.mainLeagueSeasons div.mainSeason label.seasonDetails input[type=checkbox] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+div.seasonAndTeamSelect {
+  width: 90%;
+}
+div.seasonAndTeamSelect .row {
+  justify-content: space-between;
+}
+div.seasonAndTeamSelect table.leaguesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.8vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #26b5aa;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+div.seasonAndTeamSelect table.leaguesTable td {
+  padding: 15px;
+  font-size: 0.6vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid #ddd;
+}
+div.seasonAndTeamSelect table.leaguesTable tr.leagueRow {
+  background-color: #6a1b9a;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+div.seasonAndTeamSelect table.leaguesTable tr.leagueRow:hover {
+  background-color: #0277bd;
+}
+div.seasonAndTeamSelect table.leaguesTable tr.leagueRow td.leagueCol {
+  text-align: center;
+}
+div.seasonAndTeamSelect table.leaguesTable tr.seasonsRow {
+  background-color: #ffd600;
+  color: #333;
+  font-style: italic;
+}
+div.seasonAndTeamSelect table.leaguesTable tr.seasonsRow td.seasonsCol {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+div.seasonAndTeamSelect table.leaguesTable tr.seasonsRow td.seasonsCol:hover {
+  background-color: #ffeb3b;
+  cursor: pointer;
+}/*# sourceMappingURL=SignUp.css.map */

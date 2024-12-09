@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  div.topContentDiv {
+    flex-direction: column;
+    margin-left: 40%;
+    margin-right: auto;
+  }
+  div.topContentDiv div.topContentDiv section.topSection {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  div.carouselCustom {
+    padding: 20px 10px;
+  }
+  div.carouselCustom img.articleImage {
+    height: 150px;
+  }
+}/*# sourceMappingURL=Medias.css.map */

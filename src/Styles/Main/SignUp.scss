@@ -1,0 +1,209 @@
+@import "../Helper/Variables.scss";
+
+div.countryAndLeagueSelect{
+    background: linear-gradient(135deg, #f0f4f8, #e0e7ff); /* רקע בהיר עם מעבר צבע עדין */
+    padding-top: 2vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: $div-border-radius;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+
+div.mainDetailsSignUp {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: $div-border-radius;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    text-align: center;
+
+    h2.titleForm {
+      font-size: $header-font-size;
+      font-family: $header-font-family ;
+      color: #ffdb58;
+    text-shadow: 0 0 10px #ffdb58, 0 0 20px #ffffff, 0 0 30px #ffdb58;
+    margin-bottom: 20px;
+    
+    &::after {
+        content: '⚽';
+        font-size: 1.5vw;
+        margin-left: 10px;
+    }
+    
+    }
+  
+    form.signUpForm {
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: $subTitle-font-size;
+        }
+
+      label.form-label {
+        font-size: $title-font-size;
+        font-family: $title-font-family ;
+      }
+      div.errorAlertCustom {
+        margin-top: 0.2vw;
+        animation: shake 0.5s ease-in-out;
+        animation-iteration-count: 1;
+        font-size:$subTitle-font-size;
+        font-family:$subTitle-font-family;
+        color: red;
+        cursor: $cursor-Error;
+      }
+
+      button[type="submit"] {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-size: $topTitle-font-size;
+        font-family: $topTitle-font-family ;
+        padding: 12px 20px;
+        border-radius: $small-border-radius ;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+  
+        &:hover {
+          background-color: #0056b3;
+          transform: scale(1.05);
+          cursor: $cursor-Correct;
+        }
+  
+        &:active {
+          background-color: #004085;
+          transform: scale(0.95);
+        }
+
+        &.btnGoogle {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #ff5722;
+            border: none;
+            color: white;
+            margin-top: 10px;
+
+            &:hover {
+                background-color: #e64a19;
+            }
+        }
+        
+        
+      }
+    }
+  }
+
+  div.mainLeagueSeasons {
+    background-color: #6a1b9a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 300px;
+    color: white;
+    transition: transform 0.3s ease;
+    height: fit-content;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    h2.leagueName {
+      background-color: #d32f2f;
+      padding: 10px;
+      text-align: center;
+      border-radius: $small-border-radius;
+      text-transform: uppercase;
+      font-size: $title-font-size;
+          font-family: $title-font-family ;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+  
+    div.mainSeason {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      label.seasonDetails {
+        display: flex;
+        align-items: center;
+        background-color: #3fe659;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: $subTitle-font-size;
+        font-family: $subTitle-font-family ;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-bottom: 0.3vh;
+  
+        &:hover {
+          background-color: #ffeb3b;
+        }
+  
+        & input[type="checkbox"] {
+          margin-right: 10px;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+   
+  div.seasonAndTeamSelect {
+    width: 90%;
+    & .row {
+      justify-content: space-between;
+    }
+
+    table.leaguesTable {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: $title-font-size;
+        font-family: $title-font-family ;
+        background-color: #26b5aa;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      
+        td {
+          padding: 15px;
+          font-size: $subTitle-font-size;
+          font-family: $subTitle-font-family ;
+          border-bottom: 1px solid #ddd;
+        }
+      
+        tr.leagueRow {
+          background-color: #6a1b9a;
+          color: white;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+      
+          &:hover {
+            background-color: #0277bd;
+          }
+      
+          td.leagueCol {
+            text-align: center;
+          }
+        }
+      
+        tr.seasonsRow {
+          background-color: #ffd600;
+          color: #333;
+          font-style: italic;
+      
+          td.seasonsCol {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+      
+            &:hover {
+              background-color: #ffeb3b;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+  }

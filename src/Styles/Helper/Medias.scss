@@ -1,0 +1,29 @@
+// The sections will be arranged vertically on smaller screens
+
+@media (max-width: 768px) {
+    div.topContentDiv {
+      flex-direction: column;
+      margin-left: 40%;
+      margin-right: auto;
+  
+      div.topContentDiv section.topSection {
+        max-width: 100%;
+      }
+  
+    }
+  }
+
+ // Redesign the carousel to better fit smaller screens. 
+ // the carousel looks is more accessible on mobile devices
+
+  @media (max-width: 768px) {
+    div.carouselCustom {
+      padding: 20px 10px;
+
+      img.articleImage {
+        height: 150px;
+      }
+      
+    }
+
+  }

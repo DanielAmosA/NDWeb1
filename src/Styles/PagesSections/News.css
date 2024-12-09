@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* Move the background and make it larger. 
+    Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1.1vw;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -8.9vw 1.1vw;
+  }
+}
+/* Move the background and make it smaller.
+   Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -8.9vw 1.1vw;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1.1vw;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+/* The effect is that the element appears to "shake" or "flicker" 
+    Gently by making small changes to its transparency during the animation. */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  div.topContentDiv {
+    flex-direction: column;
+    margin-left: 40%;
+    margin-right: auto;
+  }
+  div.topContentDiv div.topContentDiv section.topSection {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  div.carouselCustom {
+    padding: 20px 10px;
+  }
+  div.carouselCustom img.articleImage {
+    height: 150px;
+  }
+}
+.lal {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+div.carouselCustom {
+  padding: 2vw;
+  background-color: #0a1a2b; /* כחול כהה, רקע נקי */
+  border-radius: 1vw;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+div.carouselCustom div.articleCol {
+  padding: 0 0.8vw;
+}
+div.carouselCustom div.articleCol div.articleSlide {
+  animation: fadeIn 0.5s ease-in-out;
+  background: linear-gradient(135deg, #1c3d5a, #2a5791); /* גווני כחול כהה */
+  border-radius: 0.2vw;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.6s ease-in-out;
+}
+div.carouselCustom div.articleCol div.articleSlide:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+div.carouselCustom div.articleCol div.articleSlide img.articleImage {
+  height: 10vw;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
+  border-bottom: 5px solid #ff4500;
+}
+div.carouselCustom div.articleCol div.articleSlide div.articleContent {
+  padding: 0.6vw;
+  text-align: center;
+  color: white;
+}
+div.carouselCustom div.articleCol div.articleSlide div.articleContent h2.articleTitle {
+  font-size: 1vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffcc00; /* צהוב לכותרת */
+}
+div.carouselCustom div.articleCol div.articleSlide div.articleContent h4.articleSubTitle {
+  color: #e0e0e0;
+  font-size: 0.8vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+div.carouselCustom div.articleCol div.articleSlide div.articleContent h6.articlePublish {
+  font-size: 0.6vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+div.carouselCustom div.articleCol div.articleSlide div.articleContent div.articleIcons {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+div.carouselCustom div.articleCol div.articleSlide div.articleContent div.articleIcons img.articleIconImg {
+  height: 4vh;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=News.css.map */

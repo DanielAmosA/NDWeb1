@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.lal {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+div.selectElem {
+  margin-bottom: 2.5vh;
+}
+div.selectElem h2.selectTitle {
+  font-size: 0.8vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(45deg, #83c1f8, #3a9856);
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 8vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  position: relative;
+  cursor: url("../../Assets/Pic/Cursor/Help2.png"), auto;
+}
+div.selectElem h2.selectTitle::before {
+  content: "🔍";
+  position: absolute;
+  left: -2.1vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8vw;
+}
+div.selectElem .selectCustom {
+  font-size: 0.6vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+div.selectElem button.selectBtn {
+  background: linear-gradient(45deg, #6a1b9a, #d32f2f);
+  border: none;
+  border-radius: 15vw;
+  color: white;
+  font-size: 0.6vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: emoji;
+  margin-left: 25%;
+}
+div.selectElem button.selectBtn:hover {
+  background: linear-gradient(45deg, #d32f2f, #6a1b9a);
+  transform: scale(1.05);
+}
+div.selectElem button.selectBtn:active {
+  background: linear-gradient(45deg, #6a1b9a, #d32f2f);
+  color: #f2b708;
+  transform: scale(0.95);
+}
+div.selectElem button.selectBtn::before {
+  content: "⚽";
+  margin-right: 10px;
+}
+div.selectElem div.mainKindLoadData p.mainKindLoadDataTitle {
+  font-size: 0.8vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #288c8f;
+}
+div.selectElem div.mainKindLoadData .mainKindLoadDataImg {
+  width: 10vw;
+}
+div.selectElem div.leaguesSeasonsWithButton {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.selectElem div.leaguesSeasonsWithButton div.leaguesSeasonsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+div.selectElem div.leaguesSeasonsWithButton button.selectBtn {
+  margin-left: 0.2vw !important;
+}/*# sourceMappingURL=SelectTool.css.map */

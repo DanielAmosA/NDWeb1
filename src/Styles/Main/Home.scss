@@ -1,0 +1,74 @@
+@import "../Helper/Variables.scss";
+@import "../Helper/Medias.scss";
+
+@import "../PagesSections/LiveMatches.scss";
+
+div.homePageContainer {
+  padding: 1vh 2vw;
+  background-color: #141414;
+  color: white;
+
+  header.homePageHeader{
+      text-align: center;
+      margin-bottom: 2vh;
+      background-color: #333;
+      padding: 1vh 2vw;
+      border-radius: $small-border-radius;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+      h1.homePageHeaderTitle {
+        color: #ff4d4f;
+        font-size: $header-font-size;
+        font-family: $header-font-family;
+      }
+  
+
+    }
+
+  div.topContentDiv {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    & section.topSection {
+      background-color: #1e1e1e;
+      padding: 1vh 2vw;
+      margin: 0.5vh 1vw;
+      border-radius: $div-border-radius;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      flex-basis: 30%;
+      max-width: 30%;
+
+      h2.sectionHeader {
+        color: #f39c12;
+        margin-bottom: 1.2vh;
+        font-size: $title-font-size;
+        font-family: $title-font-family;
+        text-align: center;
+      }
+
+      ul.sectionList {
+        list-style: none;
+        padding: 0;
+
+        li.sectionItemList {
+          background-color: #333;
+          margin: 0.5vh 0;
+          padding: 0.5vh 1vw;;
+          border-radius: 0.3vw;
+          color: #fff;
+          text-align: center;
+          font-size: $subTitle-font-size;
+          font-family: $subTitle-font-family;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #ff4d4f;
+          }
+        }
+      }
+
+    }
+  }
+}
+

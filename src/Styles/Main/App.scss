@@ -1,0 +1,114 @@
+@import "./AllImports.scss"; 
+
+div.App {
+  background-image: url("../../Assets/Pic/Web/image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+div.App div.card {
+  background-color: rgb(204 242 183);
+  border-radius: $small-border-radius;
+  padding: 0.3vw;
+
+  div.card-title {
+    font-family: $topHeader-font-family;
+    font-weight: 800;
+    font-size: $topHeader-font-size;
+    width: 6vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img.card-img-top {
+    border-radius:$big-border-radius;
+    width: 3.5vw;
+    height: auto;
+    object-fit: contain;
+  }
+
+  p.card-text {
+    font-size: 0.5vw;
+  }
+
+  div.card-header,
+  div.card-body,
+  div.card-footer {
+    padding: 0.4vw 0;
+  }
+
+  div.rainbow-text {
+    background: #ca4246;
+    background-color: #ca4246;
+    background: conic-gradient(
+      #ca4246 16.666%,
+      #e16541 16.666%,
+      #e16541 33.333%,
+      #f18f43 33.333%,
+      #f18f43 50%,
+      #8b9862 50%,
+      #8b9862 66.666%,
+      #476098 66.666%,
+      #476098 83.333%,
+      #a7489b 83.333%
+    );
+    background-size: 57%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-text-animation-rev 0.5s ease forwards;
+    cursor: pointer;
+
+    &:hover {
+      animation: rainbow-text-animation 0.5s ease forwards;
+    }
+  }
+}
+
+
+div.App div.card div.card-footer {
+  div.menu {
+    padding: 0 0.3vw;
+    font-size: $subTitle-font-size;
+    border-radius: $big-border-radius;
+    overflow: hidden;
+    perspective: 1px;
+    border-collapse: separate;
+    display: inline-flex;
+    gap: 1.5vw;
+    background-image: linear-gradient(
+      to right,
+      #a1c4fd,
+      #a3cefe,
+      #aad8fd,
+      #b5e1fc,
+      #c2e9fb
+    );
+
+    
+    div.menuItem , nav.menuItem {
+      &:hover {
+        background: linear-gradient(to right, #dad299, #b0dab9);
+        border-radius: $big-border-radius;
+      }
+
+      a {
+        font-family:$subTitle-font-size;
+        color: #0a04f5;
+        text-decoration: none;
+        cursor: $cursor-Enter;
+
+        &.active {
+          background-color: #007bff;
+          color: white;
+          border-radius: $big-border-radius;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}

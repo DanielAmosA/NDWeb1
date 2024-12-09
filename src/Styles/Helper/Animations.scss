@@ -1,0 +1,85 @@
+/* Move the background and make it larger. 
+    Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1.1vw;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -8.9vw 1.1vw;
+  }
+}
+
+/* Move the background and make it smaller.
+   Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -8.9vw 1.1vw;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1.1vw;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+
+/* The effect is that the element appears to "shake" or "flicker" 
+    Gently by making small changes to its transparency during the animation. */
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// This animation is suitable for elements that require subtle emphasis, 
+// such as buttons, icons, or text that needs the user's attention. 
+// It gives a slight 'shake' effect to draw attention.
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Suitable for a gentle entrance of content such as images or headlines. 
+// It makes the element appear smoothly with a slight upward movement
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
